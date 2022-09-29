@@ -19,7 +19,7 @@ html, body {
 }
 body {
   background-color: var(--eerieblk);
-  background-image: url(../images/footerimage.jpeg);
+  background-image: url(../images/background-portrait.jpeg);
   min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
