@@ -70,7 +70,7 @@ li{
 }
 
 .container{
-  background-color: blue;
+  /* background-color: blue; */
   width: 50vw;
   height: 90vh;
   padding: 2vh;
