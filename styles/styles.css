@@ -18,8 +18,8 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-color: var(--eerieblk);
-  background-image: url(../images/background-portrait.jpeg);
+  background-color: var(--platinum);
+  /* background-image: url(../images/background-portrait.jpeg); */
   min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
