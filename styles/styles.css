@@ -15,11 +15,11 @@ html, body {
     height: 100%;
     position: relative;
     width: 100;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 body {
-  background-color: var(--platinum);
-  /* background-image: url(../images/background-portrait.jpeg); */
+  background-color: var(--eerieblk);
+  background-image: url(../images/footerimage.jpeg);
   min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,47 +33,43 @@ h1, h2, p{
 
 h1{
   font-family: 'Oswald', sans-serif;
-  font-size: 10vh;
+  font-size: 5em;
   color: var(--eerieblk);
   line-height: 100%;
 }
 
 h2, .link {
   font-family: 'Oswald', sans-serif;
-  font-size: 7vh;
-  color: var(--link-strd);
-  line-height: 100%;
+  font-size: 2.5em;
+  color: var(--eerieblk);
+  padding: 0px;
+  cursor:pointer;
 }
 
-li{
-  padding: 2vh;
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .navbar{
-  z-index: 1;
-  position: fixed;
+  width: 95vw;
+  height: 5vh;
   text-align: right;
-  width: 100vw;
-  height: 8vh;
-  background-color: red;
-  opacity: 0.5;
-}
-
-.page {
-  z-index: -1;
-  max-height: 100vh;
-  max-width: 92vw;
-  padding: 8vh;
-  padding-bottom: 0px;
-  /* background-color: green; */
-  transition: 0.5s;
+  padding-right: 5vw;
+  font-size: 2em;
 }
 
 .container{
-  /* background-color: blue; */
   width: 50vw;
-  height: 90vh;
-  padding: 2vh;
+  height: 80vh;
+  padding-top: 10vh;
+  padding-left: 2vw;
+
+}
+
+.copyright{
+  height: 5vh;
+  padding-left: 2vw;
 }
 
 .linkmenu {
@@ -82,7 +78,6 @@ li{
 }
 
 .link:link {
-  /* background-color: yellow; */
   text-decoration: none;
 }
 .link:visited {
@@ -104,7 +99,7 @@ li{
 }
 
 .image{
-  height: 28vw;
+  height: 40vh;
   display: block;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -112,10 +107,52 @@ li{
   margin-bottom: 3vh;
 }
 
-.fadein{
-  opacity: 1;
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--platinum);
 }
 
-.fadeout{
-  opacity: 0;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--eerieblk);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--flame);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
