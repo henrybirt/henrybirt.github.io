@@ -5,38 +5,58 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>Tickets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6673d995fc.js" crossorigin="anonymous"></script>
+    <title>Henry Birt - Tickets</title>
   </head>
   <body>
-    <div class="navbar">
-      <a onclick="openNav()" class="link">&#9776;</a>
+    <!-- HEADER -->
+    <div id="navbar">
+      <div class="spacer"> </div>
+      <h1 id="title"> HENRY BIRT </h1>
+      <a id="menu-btn" class="link" onclick="openNav()">&#9776;</a>
+      <div id="links">
+        <a href="https://open.spotify.com/artist/41BeImsXatUSdyHxuNrsiQ?si=4E6DXx1HRTGw4yP8uAyZdQ&dl_branch=1" target="_blank"><i class="icon fa-brands fa-spotify"></i></a>
+        <a href="https://www.instagram.com/henrybirt/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/henrybirt0/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@henrybirt5171" target="_blank"><i class="icon fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@henrybirt_?_t=8YrUYlxROk9&_r=1" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
+
+    <!-- OVERLAY MENU -->
     <div id="overlay" class="overlay">
       <!-- Button to close the overlay navigation -->
       <a class="closebtn link" onclick="closeNav()">&times;</a>
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="/">HOME</a>
-        <a href="tickets">TICKETS</a>
-        <a href="about">ABOUT</a>
+        <a class="link" href="/">HOME</a><br>
+        <a class="link" href="tickets">TICKETS</a><br>
+        <a class="link" href="about">ABOUT</a>
       </div>
     </div>
 
-    <div class="container">
-      <div class="title"> <h1>TICKETS</h1> </div><br>
-      <a href="https://dice.fm/partner/closeup-promotions/event/aywnx-the-precious-lies-henry-birt-24th-feb-crofters-rights-bristol-tickets?dice_channel=web&dice_tags=organic&dice_campaign=CloseUp+Promotions&dice_feature=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S9NTko1NjEwTDI1MwUA8ScaXiEAAAA%3D&_branch_match_id=1143935207135664144">
-      <img src="images/latesttickets.jpg" style="max-width:20vw;"></img>
-      </a>
-      <p>The Precious Lies + Henry Birt<br>
-        Crofters Rights<br>
-        Fri 24 Feb at 7:30 pm</p>
-      <a href="https://dice.fm/partner/closeup-promotions/event/aywnx-the-precious-lies-henry-birt-24th-feb-crofters-rights-bristol-tickets?dice_channel=web&dice_tags=organic&dice_campaign=CloseUp+Promotions&dice_feature=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S9NTko1NjEwTDI1MwUA8ScaXiEAAAA%3D&_branch_match_id=1143935207135664144" class="link">
-        BUY</a>
+    <!-- SECTIONS -->
+    <div id="trampolene" class="ticket">
+      <img id="ticket-img"src="images/trampolene.jpeg" alt="">
+      <div class="ticket-info">
+        <a href="https://www.ticketweb.uk/event/trampolene-rough-trade-bristol-tickets/12576935?pl=metropolis&_ga=2.210293270.24391675.1677702467-1620305494.1677702465" class="box-link">BUY NOW</a>
+      </div>
     </div>
 
+    <!-- <div class="page3">
+
+    </div> -->
+
+    <!-- FOOTER -->
     <div class="copyright">
-        <p>&copy; 2023 Henry Birt</p>
+        <p>&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> Henry Birt
+          <a href="https://open.spotify.com/artist/41BeImsXatUSdyHxuNrsiQ?si=4E6DXx1HRTGw4yP8uAyZdQ&dl_branch=1" target="_blank"><i class="icon fa-brands fa-spotify"></i></a>
+          <a href="https://www.instagram.com/henrybirt/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/henrybirt0/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@henrybirt5171" target="_blank"><i class="icon fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@henrybirt_?_t=8YrUYlxROk9&_r=1" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a>
+        </p>
     </div>
 
     <script type="text/javascript" src="scripts/script.js"></script>

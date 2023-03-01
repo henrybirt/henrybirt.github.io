@@ -5,33 +5,54 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6673d995fc.js" crossorigin="anonymous"></script>
+    <title>Henry Birt</title>
   </head>
   <body>
-    <div class="navbar">
-      <a onclick="openNav()" class="link">&#9776;</a>
+    <!-- HEADER -->
+    <div id="navbar">
+      <div class="spacer"> </div>
+      <h1 id="title"> HENRY BIRT </h1>
+      <a id="menu-btn" class="link" onclick="openNav()">&#9776;</a>
+      <div id="links">
+        <a href="https://open.spotify.com/artist/41BeImsXatUSdyHxuNrsiQ?si=4E6DXx1HRTGw4yP8uAyZdQ&dl_branch=1" target="_blank"><i class="icon fa-brands fa-spotify"></i></a>
+        <a href="https://www.instagram.com/henrybirt/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/henrybirt0/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@henrybirt5171" target="_blank"><i class="icon fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@henrybirt_?_t=8YrUYlxROk9&_r=1" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
+
+    <!-- OVERLAY MENU -->
     <div id="overlay" class="overlay">
       <!-- Button to close the overlay navigation -->
       <a class="closebtn link" onclick="closeNav()">&times;</a>
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="/">HOME</a>
-        <a href="tickets">TICKETS</a>
-        <a href="about">ABOUT</a>
+        <a class="link" href="/">HOME</a><br>
+        <a class="link" href="tickets">TICKETS</a><br>
+        <a class="link" href="about">ABOUT</a>
       </div>
     </div>
 
-    <div class="container">
-      <div class="title"> <h1>ABOUT</h1> </div><br>
+    <!-- SECTIONS -->
+    <div class="page about">
+      <div> <h2>ABOUT</h2> </div><br>
       <p>The 21 year old singer-songwriter Henry Birt, is no stranger to the Bristol music scene. After being a drummer in bands throughout his teens and picking up the guitar and piano alongside this, Birt's individuality comes from the fact that all his tracks are recorded by himself alone. Inspired by the likes of Lenny Kravitz and Paul McCartney.</p><br>
       <p>Pulsating drum beats, paired with catchy riffs and powerful vocals encapsulate Henry's sound. Taking cues from Blossoms and Inhaler but with the heavy drive of Lenny Kravitz guitar, and resembling similarities to The Verve's Richard Ashcroft in vocal tonality, keep an eye out for Birt's latest releases and his band live.</p><br>
-      <a href="henry birt press release.pdf" class="link" download="Henry Birt" target="_blank"><b>&#x2913;</b></a>
+      <h2><a href="henry birt press release.pdf" class="link" download="Henry Birt" target="_blank"><b>&#x2913;</b></a><h2>
     </div>
 
+    <!-- FOOTER -->
     <div class="copyright">
-        <p>&copy; 2023 Henry Birt</p>
+        <p>&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> Henry Birt
+          <a href="https://open.spotify.com/artist/41BeImsXatUSdyHxuNrsiQ?si=4E6DXx1HRTGw4yP8uAyZdQ&dl_branch=1" target="_blank"><i class="icon fa-brands fa-spotify"></i></a>
+          <a href="https://www.instagram.com/henrybirt/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/henrybirt0/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@henrybirt5171" target="_blank"><i class="icon fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@henrybirt_?_t=8YrUYlxROk9&_r=1" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a>
+        </p>
     </div>
 
     <script type="text/javascript" src="scripts/script.js"></script>
