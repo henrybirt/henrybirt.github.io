@@ -31,9 +31,9 @@ h1, h2, p{
 }
 
 h1{
-  font-family: 'custom';
-  font-weight: 600;
-  font-size: 5em;
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 5.5em;
   color: var(--eerieblk);
   float: none;
 }
