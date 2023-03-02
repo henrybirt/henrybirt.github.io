@@ -72,6 +72,7 @@ ul{
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+  z-index: 99;
 }
 
 .navlist{
@@ -100,7 +101,7 @@ ul{
   font-size: 4em;
   padding: 0px;
   margin: 0px;
-  line-height: 0.9em;
+  line-height: 1.5em;
   width: 4vw;
   text-align: right;
   padding-right: 2vw;
@@ -174,8 +175,9 @@ ul{
 }
 
 #open-my-eyes-img{
-  height:40vh;
-  padding: 5vh;
+  height:35vh;
+  border: 10px solid white;
+  margin: 5vh;
 }
 
 .copyright{
@@ -231,14 +233,17 @@ ul{
     flex-flow: row wrap;
   }
   .ticket-info{
-    background-color: #026e90;
+    /* background-color: #026e90; */
+    background-color: #020607;
     padding: 5vh;
     width: 95vw;
   }
   #ticket-img{
+    content: url(../images/trampolene-mob.jpeg);
     width: 100vw;
   }
 }
+
 @media screen and (orientation: landscape) {
   .ticket-info{
       background-image: url(../images/trampolene-bg.jpeg);
@@ -246,6 +251,7 @@ ul{
       padding-top: 15vw;
   }
   #ticket-img{
+    content: url(../images/trampolene.jpeg);
     display: inline-block;
     width: 80vw
   }
@@ -275,7 +281,80 @@ ul{
   text-decoration: none;
 }
 
-/* The Overlay (background) */
+/* DISCOGRAPHY */
+#discog{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+#discog-title{
+  width: 100vw;
+  padding: 0px;
+}
+
+#song-title{
+  font-family:  'custom';
+  font-weight: 200;
+  margin: 5vw;
+  width: 90vw;
+  text-align: center;
+}
+
+.arrow-btn{
+  cursor: pointer;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 15vh;
+  font-weight: 900;
+  width: 20vw;
+  height: 20vh;
+}
+
+.arrow-btn:link {
+  text-decoration: none;
+}
+.arrow-btn:visited {
+  text-decoration: none;
+}
+.arrow-btn:hover {
+  text-decoration: none;
+  color: var(--qksilver);
+}
+.arrow-btn:active {
+  text-decoration: none;
+}
+
+#discog-img-container{
+  text-align: center;
+  padding-top: 3vh;
+  width: 60vw;
+}
+
+.discog-img{
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  height: 30vh;
+  transition:opacity 1s ease-out;
+}
+
+#active{
+  opacity: 1;
+}
+
+#prev{
+  opacity: 0;
+}
+
+#next{
+  opacity: 0;
+}
+
+/* OVERLAY */
 .overlay {
   font-family: 'custom';
   font-size: 2em;
@@ -299,7 +378,7 @@ ul{
 
 .overlay .closebtn {
   position: absolute;
-  top: 3vh;
+  top: 4vh;
 }
 
 .closebtn{
@@ -309,7 +388,7 @@ ul{
 
 .about{
   padding: 5vh;
-  width: 90vh;
+  width: 90vw;
 }
 
 @media screen and (max-height: 450px) {

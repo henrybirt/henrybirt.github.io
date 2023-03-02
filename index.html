@@ -39,15 +39,31 @@
     <!-- SECTIONS -->
     <div id="latest-single" class="page">
       <h2>OPEN MY EYES</h2>
-      <a href="spotify:album:7i4nqSu22IDtVnNqTrFk2f" target="_blank" class="link"><p><u>OUT 03/03</u></p></a>
+      <a href="spotify:album:7i4nqSu22IDtVnNqTrFk2f" target="_blank" class="link"><p><u>OUT NOW</u></p></a>
       <a href="spotify:album:7i4nqSu22IDtVnNqTrFk2f" target="_blank"><img id="open-my-eyes-img" src="images/open-my-eyes.jpeg" alt=""></a>
     </div>
 
     <div id="trampolene" class="ticket">
-      <img id="ticket-img"src="images/trampolene.jpeg" alt="">
+      <img id="ticket-img" src="images/trampolene.jpeg" alt="">
       <div class="ticket-info">
         <a href="https://www.ticketweb.uk/event/trampolene-rough-trade-bristol-tickets/12576935?pl=metropolis&_ga=2.210293270.24391675.1677702467-1620305494.1677702465" class="box-link">BUY NOW</a>
       </div>
+    </div>
+
+    <div id="discog" class="page">
+      <h2 id="discog-title">SINGLES</h2>
+      <a id="left-btn" class="arrow-btn" onclick="changeImage(document.getElementById('left-btn').getAttribute('id'))">
+        &larr;
+      </a>
+      <a href="https://open.spotify.com/track/6nUThNvaU7ZuCcFVotmwxj?si=QHfYKP3lSDuLRW23YSaYZA" target="_blank" id="img-link"><div id="discog-img-container">
+        <img id="active" class="discog-img" src="images/rainbows.jpeg">
+        <img id="next" class="discog-img" src="images/leave-here.jpeg">
+        <img id="prev" class="discog-img" src="images/open-my-eyes.jpeg">
+      </div></a>
+      <a id="right-btn" class="arrow-btn" onclick="changeImage(document.getElementById('right-btn').getAttribute('id'))">
+        &rarr;
+      </a>
+      <a href="https://open.spotify.com/track/6nUThNvaU7ZuCcFVotmwxj?si=QHfYKP3lSDuLRW23YSaYZA" target="_blank" id="song-link" class="link"><h3 id="song-title">RAINBOWS I COULD NOT SEE</h3></a>
     </div>
 
     <div id="landing" class="page">
