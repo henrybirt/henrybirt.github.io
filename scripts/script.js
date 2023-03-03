@@ -11,7 +11,7 @@ function closeNav() {
 function changeImage(direction) {
   const images = ["images/open-my-eyes.jpeg","images/leave-here.jpeg","images/rainbows.jpeg"]
   const titles = ["OPEN MY EYES", "LEAVE HERE IN THE MORNING", "RAINBOWS I COULD NOT SEE"]
-  const links = ["spotify:album:7i4nqSu22IDtVnNqTrFk2f","https://open.spotify.com/track/7f2vbvMPUMRjhrYKEpn4NC?si=VeyaMHmBQj-KpZg77ql49w","https://open.spotify.com/track/6nUThNvaU7ZuCcFVotmwxj?si=QHfYKP3lSDuLRW23YSaYZA"]
+  const links = ["https://open.spotify.com/track/7C67XH9yHhiUOj7Tz7RLx5?si=9c6ed08b81514465","https://open.spotify.com/track/7f2vbvMPUMRjhrYKEpn4NC?si=VeyaMHmBQj-KpZg77ql49w","https://open.spotify.com/track/6nUThNvaU7ZuCcFVotmwxj?si=QHfYKP3lSDuLRW23YSaYZA"]
   let active = document.getElementById("active");
   let prev = document.getElementById("prev");
   let next = document.getElementById("next");
