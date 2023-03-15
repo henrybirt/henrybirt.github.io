@@ -391,6 +391,60 @@ ul{
   width: 90vw;
 }
 
+/* PORTFOLIO */
+.download-portfolio{
+  text-align: center;
+  padding: 5vh;
+}
+.portfolio-page{
+  font-family: 'Oswald';
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 3vh;
+}
+
+.portfolio-title{
+  width: 96vw;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+  padding: 2vw;
+}
+
+.portfolio-txt{
+  font-family: 'Helvetica', sans-serif;
+  font-weight:100;
+  font-size: 1em;
+}
+
+@media screen and (orientation: portrait) {
+  .portfolio-img{
+    width: 80vw;
+    padding: 0vw 10vw 3vw 10vw;
+  }
+  .portfolio-txt{
+    width: 80vw;
+    padding: 0vw 10vw 3vw 10vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .portfolio-img{
+    width: 20vw;
+    padding: 0vw 3vw 3vw 12vw;
+  }
+  .portfolio-txt{
+    width: 55vw;
+    padding: 0vw 10vw 0vw 0vw;
+  }
+}
+
+#portfolio-snowman{
+  background-color:#393e41;
+  color: #ffffff;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {

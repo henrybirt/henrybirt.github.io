@@ -71,3 +71,16 @@ window.onload = function() {
        changeImage("right-btn");
    }, 5000);
 };
+
+function sendMail() {
+  let d = "gmail";
+  let c = ".com"
+  let p = "henryljbirt";
+  let adr = p + "@" + d + c;
+  var link = "mailto:" + adr
+            + "?"
+            + "&subject=Hi!"
+  ;
+
+  window.location.href = link;
+}
